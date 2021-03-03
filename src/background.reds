@@ -22,7 +22,7 @@ public func GenerateChildhoodEvents(seed: Int32, lifePath: ref<LifePath>) -> Str
   let eventsCount: Int32 = RandRange(seed + 21620, 1, 2);
 
   let i = 0;
-  while i < eventsCount - 1 {
+  while i < eventsCount {
     childhoodEvents += "- " + GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedChildhoodEvents, lifePath.possibleEvents.m_cdfWeightedChildhoodEvents) + "\n";
     i += 1;
   }  
@@ -35,10 +35,10 @@ public func GenerateFirstJob(seed: Int32, lifePath: ref<LifePath>) -> String {
 
 public func GenerateAdultEvents(seed: Int32, lifePath: ref<LifePath>) -> String {
   let adultEvents: String;
-  let eventsCount: Int32 = RandRange(seed + 21620, 1, 3);
+  let eventsCount: Int32 = RandRange(seed + 21620, 1, 2);
 
   let i = 0;
-  while i < eventsCount - 1 {
+  while i < eventsCount {
     adultEvents += "- " + GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedAdultEvents, lifePath.possibleEvents.m_cdfWeightedAdultEvents) + "\n";
     i += 1;
   }  

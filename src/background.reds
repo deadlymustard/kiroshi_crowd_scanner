@@ -1,9 +1,10 @@
 public func GenerateBackgroundStory(seed: Int32, lifePath: ref<LifePath>) -> String {
-  return "<#Early Life>\n" 
+  return "<#Background>\n" 
     + GenerateChildhoodHome(seed, lifePath) 
     + GenerateUpbringingEvent(seed, lifePath) 
+    + "\n\n<#Early Life>\n"
     + GenerateChildhoodEvents(seed, lifePath)
-    + "\n\n" + "<#Significant Events>\n" 
+    + "\n<#Significant Events>\n" 
     + GenerateFirstJob(seed, lifePath) 
     + GenerateAdultEvents(seed, lifePath);
 }
@@ -22,14 +23,14 @@ public func GenerateChildhoodEvents(seed: Int32, lifePath: ref<LifePath>) -> Str
 
   let i = 0;
   while i < eventsCount - 1 {
-    childhoodEvents += GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedChildhoodEvents, lifePath.possibleEvents.m_cdfWeightedChildhoodEvents);
+    childhoodEvents += "- " + GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedChildhoodEvents, lifePath.possibleEvents.m_cdfWeightedChildhoodEvents) + "\n";
     i += 1;
   }  
   return childhoodEvents;
 }
 
 public func GenerateFirstJob(seed: Int32, lifePath: ref<LifePath>) -> String {
-  return GenerateEvent(seed, lifePath, lifePath.possibleEvents.m_weightedJobEvents, lifePath.possibleEvents.m_cdfWeightedJobEvents);
+  return "- " + GenerateEvent(seed, lifePath, lifePath.possibleEvents.m_weightedJobEvents, lifePath.possibleEvents.m_cdfWeightedJobEvents) + "\n";
 }
 
 public func GenerateAdultEvents(seed: Int32, lifePath: ref<LifePath>) -> String {
@@ -38,7 +39,7 @@ public func GenerateAdultEvents(seed: Int32, lifePath: ref<LifePath>) -> String 
 
   let i = 0;
   while i < eventsCount - 1 {
-    adultEvents += GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedAdultEvents, lifePath.possibleEvents.m_cdfWeightedAdultEvents);
+    adultEvents += "- " + GenerateEvent(seed + (i * 199), lifePath, lifePath.possibleEvents.m_weightedAdultEvents, lifePath.possibleEvents.m_cdfWeightedAdultEvents) + "\n";
     i += 1;
   }  
   return adultEvents;

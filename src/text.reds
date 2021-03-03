@@ -434,7 +434,7 @@ public class Text {
 	public static func CHILD_SPY_F() -> String { return "Hired by a corpo to act as a child spy. "; }
 	public static func CHILD_SPY_M() -> String { return ""; }
 
-	public static func NET_RUN_IMPLANTS_F() -> String { return "Had black market netrunning implants install. "; }
+	public static func NET_RUN_IMPLANTS_F() -> String { return "Had black market netrunning implants installed. "; }
 	public static func NET_RUN_IMPLANTS_M() -> String { return ""; }
 
 	public static func FIRST_CW_F() -> String { return "Installed her first cyberware at %young_age% years old. "; }
@@ -674,7 +674,7 @@ public class Text {
 	public static func KILLED_CHOOM_M() -> String { return ""; }
 
 	public static func LOST_JOB_F() -> String { return "Lost her job. "; }
-	public static func LOST_JOB_M() -> String { return "List his job. "; }
+	public static func LOST_JOB_M() -> String { return "Lost his job. "; }
 
 	public static func INDUSTRIAL_ACC_F() -> String { return "Was in an industrial accident. "; }
 	public static func INDUSTRIAL_ACC_M() -> String { return ""; }

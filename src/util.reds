@@ -68,7 +68,7 @@ public func ReplaceFirst(src: String, target: String, replacement: String) -> St
 } 
 
 public func shouldPrintDebugLog() -> Bool {
-  return false;
+  return true;
 }
 
 public func Log(log: String, shouldLog: Bool) -> Void {

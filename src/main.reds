@@ -4,18 +4,11 @@ private func GenerateCharacterBackground() -> String {
   characterRecord = TweakDBInterface.GetCharacterRecord(this.GetRecordID());
   let name = LocKeyToString(characterRecord.DisplayName());
 
-  Log("Display Name: " + this.GetDisplayName());
-  Log("Full Name: " + NameToString(characterRecord.FullDisplayName()));
-
   let entityIDHash: Int32 = Cast(EntityID.GetHash(this.GetEntityID()));
-  Log(IntToString(entityIDHash), shouldPrintDebugLog());
-
   let seed = RandRange(entityIDHash, 0, 9999999999);
-  Log(IntToString(seed), shouldPrintDebugLog());
 
-  
+
   let resolvedCrowdArchetype = GetCrowdArchetype(NameToString(this.GetCurrentAppearanceName()));
-  Log("Archetype: " + resolvedCrowdArchetype);
   let resolvedBodyType = NameToString(this.GetBodyType());
 
   let lifePath: ref<LifePath>;
@@ -26,12 +19,18 @@ private func GenerateCharacterBackground() -> String {
     lifePath.Initialize("female", resolvedCrowdArchetype);
   }
 
-  let headerString = "<<Provided By InfoComp©>>\n\n";
+  let footerString = "\n\n© InfoComp 2077. All rights reserved.";
   let backgroundString = GenerateBackgroundStory(seed, lifePath);
 
-  Log(headerString + backgroundString, shouldPrintDebugLog());
+  Log("Entity ID Hash: " + IntToString(entityIDHash), shouldPrintDebugLog());
+  Log("Seed Value: " + IntToString(seed), shouldPrintDebugLog());
+  Log("Display Name: " + this.GetDisplayName(), shouldPrintDebugLog());
+  Log("Full Name: " + NameToString(characterRecord.FullDisplayName()), shouldPrintDebugLog());
+  Log("Crowd Appearance Name: " + NameToString(this.GetCurrentAppearanceName()), shouldPrintDebugLog());
+  Log("Archetype: " + resolvedCrowdArchetype, shouldPrintDebugLog());
+  Log("Character Background: " + backgroundString + footerString, shouldPrintDebugLog());
 
-  return headerString + backgroundString;
+  return backgroundString + footerString;
 }
 
 public func GetCrowdArchetype(appearanceName: String) -> String {

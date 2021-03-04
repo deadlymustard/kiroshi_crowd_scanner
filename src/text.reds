@@ -36,7 +36,7 @@ public class Text {
     public static func TGT_MGTOWR_F() -> String { return "Raised by a tightly-knit community in a Megatower. "; }
     public static func TGT_MGTOWR_M() -> String { return ""; }
 
-    public static func ADPT_CRP_BRD_F() -> String { return "Adopted into a luxury Corpo breeding program. "; } 
+    public static func ADPT_CRP_BRD_F() -> String { return "Adopted into a luxury corpo breeding program. "; } 
     public static func ADPT_CRP_BRD_M() -> String { return ""; } 
 
     public static func UNCR_PRNTS_F() -> String { return "Grew up with uncaring parents. "; }
@@ -108,7 +108,7 @@ public class Text {
     public static func VTGRN_LAB_F() -> String { return "Was vatgrown in a lab and raised by scientists. "; }
     public static func VTGRN_LAB_M() -> String { return ""; }
 
-    public static func RAISED_BY_AI_F() -> String { return "Raised by an artificial intelligence in a Corpo research facility. "; }
+    public static func RAISED_BY_AI_F() -> String { return "Raised by an artificial intelligence in a corpo research facility. "; }
     public static func RAISED_BY_AI_M() -> String { return ""; }
 
     public static func GENE_ALTER_F() -> String { return "Underwent genetic alterations during fetal development. "; }
@@ -117,7 +117,7 @@ public class Text {
     public static func CONGT_DEFECT_F() -> String { return "Born in %year% with a congenital defect and was cryo-preserved until a cure was developed. "; }
     public static func CONGT_DEFECT_M() -> String { return ""; }
 
-    public static func CORPO_DEBT_F() -> String { return "Born into Corpo debt of millions of eddies. "; }
+    public static func CORPO_DEBT_F() -> String { return "Born into corpo debt of millions of eddies. "; }
     public static func CORPO_DEBT_M() -> String { return ""; }
 
     public static func FAM_KLD_NCPD_F() -> String { return "Parents and extended family killed by NCPD. "; }
@@ -534,10 +534,10 @@ public class Text {
     public static func JOB_JOYTOY_CHEAP_F() -> String { return "Started working as a Joytoy on Jig Jig Street. "; }
     public static func JOB_JOYTOY_CHEAP_M() -> String { return ""; }
 
-    public static func JOB_JOYTOY_EXP_F() -> String { return "Started working as a high-end Joytoy for Corpo Executives. "; }
+    public static func JOB_JOYTOY_EXP_F() -> String { return "Started working as a high-end Joytoy for corpo executives. "; }
     public static func JOB_JOYTOY_EXP_M() -> String { return ""; }
 
-    public static func JOB_SECURITY_F() -> String { return "Started working as Security for  %corp%. "; }
+    public static func JOB_SECURITY_F() -> String { return "Started working as Security for %corp%. "; }
     public static func JOB_SECURITY_M() -> String { return ""; }
 
     public static func JOB_RECEPTION_F() -> String { return "Started working as a receptionist for %corp%. "; }

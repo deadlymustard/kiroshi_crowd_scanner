@@ -38,33 +38,33 @@ public class Events {
     public static func CONGT_DEFECT() -> ref<LifePathEvent> { return LPE(Text.CONGT_DEFECT_F(), Text.CONGT_DEFECT_M()); }
     public static func CORPO_DEBT() -> ref<LifePathEvent> { return LPE(Text.CORPO_DEBT_F(), Text.CORPO_DEBT_M()); }
     public static func FAM_KLD_NCPD() -> ref<LifePathEvent> { return LPE(Text.FAM_KLD_NCPD_F(), Text.FAM_KLD_NCPD_M()); }
-	public static func PAT_GNG_WRFR() -> ref<LifePathEvent> { return LPE(Text.PAT_GNG_WRFR_F(), Text.PAT_GNG_WRFR_M()); }
-	public static func PAT_AVRG_CTZN() -> ref<LifePathEvent> { return LPE(Text.PAT_AVRG_CTZN_F(), Text.PAT_AVRG_CTZN_M()); }
-	public static func PAT_WLTH_CTZN() -> ref<LifePathEvent> { return LPE(Text.PAT_WLTH_CTZN_F(), Text.PAT_WLTH_CTZN_M()); }
-	public static func MOT_UNID() -> ref<LifePathEvent> { return LPE(Text.MOT_UNID_F(), Text.MOT_UNID_M()); }
-	public static func FAT_UNID() -> ref<LifePathEvent> { return LPE(Text.FAT_UNID_F(), Text.FAT_UNID_M()); }
-	public static func MOT_KLD_NCPD() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_NCPD_F(), Text.MOT_KLD_NCPD_M()); }
-	public static func FAT_KLD_NCPD() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_NCPD_F(), Text.FAT_KLD_NCPD_M()); }
-	public static func MOT_KLD_MXTC() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_MXTC_F(), Text.MOT_KLD_MXTC_M()); }
-	public static func FAT_KLD_MXTC() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_MXTC_F(), Text.FAT_KLD_MXTC_M()); }
-	public static func MOT_POW() -> ref<LifePathEvent> { return LPE(Text.MOT_POW_F(), Text.MOT_POW_M()); }
-	public static func FAT_POW() -> ref<LifePathEvent> { return LPE(Text.FAT_POW_F(), Text.FAT_POW_M()); }
-	public static func MOT_INCR() -> ref<LifePathEvent> { return LPE(Text.MOT_INCR_F(), Text.MOT_INCR_M()); }
-	public static func FAT_INCR() -> ref<LifePathEvent> { return LPE(Text.FAT_INCR_F(), Text.FAT_INCR_M()); }
-	public static func MOT_DIE_NAT() -> ref<LifePathEvent> { return LPE(Text.MOT_DIE_NAT_F(), Text.MOT_DIE_NAT_M()); }
-	public static func FAT_DIE_NAT() -> ref<LifePathEvent> { return LPE(Text.FAT_DIE_NAT_F(), Text.FAT_DIE_NAT_M()); }
-	public static func MOT_WRK_CRP() -> ref<LifePathEvent> { return LPE(Text.MOT_WRK_CRP_F(), Text.MOT_WRK_CRP_M()); }
-	public static func FAT_WRK_CRP() -> ref<LifePathEvent> { return LPE(Text.FAT_WRK_CRP_F(), Text.FAT_WRK_CRP_M()); }
-	public static func MOT_MRD_CRP() -> ref<LifePathEvent> { return LPE(Text.MOT_MRD_CRP_F(), Text.MOT_MRD_CRP_M()); }
-	public static func FAT_MRD_CRP() -> ref<LifePathEvent> { return LPE(Text.FAT_MRD_CRP_F(), Text.FAT_MRD_CRP_M()); }
-	public static func MOT_KLD_WAR() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_WAR_F(), Text.MOT_KLD_WAR_M()); }
-	public static func FAT_KLD_WAR() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_WAR_F(), Text.FAT_KLD_WAR_M()); }
-	public static func MOT_DIED_ACC() -> ref<LifePathEvent> { return LPE(Text.MOT_DIED_ACC_F(), Text.MOT_DIED_ACC_M()); }
-	public static func FAT_DIED_ACC() -> ref<LifePathEvent> { return LPE(Text.FAT_DIED_ACC_F(), Text.FAT_DIED_ACC_M()); }
-	public static func MOT_HIDING() -> ref<LifePathEvent> { return LPE(Text.MOT_HIDING_F(), Text.MOT_HIDING_M()); }
-	public static func FAT_HIDING() -> ref<LifePathEvent> { return LPE(Text.FAT_HIDING_F(), Text.FAT_HIDING_M()); }
-	public static func MOT_MISSING() -> ref<LifePathEvent> { return LPE(Text.MOT_MISSING_F(), Text.MOT_MISSING_M()); }
-	public static func FAT_MISSING() -> ref<LifePathEvent> { return LPE(Text.FAT_MISSING_F(), Text.FAT_MISSING_M()); }
+    public static func PAT_GNG_WRFR() -> ref<LifePathEvent> { return LPE(Text.PAT_GNG_WRFR_F(), Text.PAT_GNG_WRFR_M()); }
+    public static func PAT_AVRG_CTZN() -> ref<LifePathEvent> { return LPE(Text.PAT_AVRG_CTZN_F(), Text.PAT_AVRG_CTZN_M()); }
+    public static func PAT_WLTH_CTZN() -> ref<LifePathEvent> { return LPE(Text.PAT_WLTH_CTZN_F(), Text.PAT_WLTH_CTZN_M()); }
+    public static func MOT_UNID() -> ref<LifePathEvent> { return LPE(Text.MOT_UNID_F(), Text.MOT_UNID_M()); }
+    public static func FAT_UNID() -> ref<LifePathEvent> { return LPE(Text.FAT_UNID_F(), Text.FAT_UNID_M()); }
+    public static func MOT_KLD_NCPD() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_NCPD_F(), Text.MOT_KLD_NCPD_M()); }
+    public static func FAT_KLD_NCPD() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_NCPD_F(), Text.FAT_KLD_NCPD_M()); }
+    public static func MOT_KLD_MXTC() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_MXTC_F(), Text.MOT_KLD_MXTC_M()); }
+    public static func FAT_KLD_MXTC() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_MXTC_F(), Text.FAT_KLD_MXTC_M()); }
+    public static func MOT_POW() -> ref<LifePathEvent> { return LPE(Text.MOT_POW_F(), Text.MOT_POW_M()); }
+    public static func FAT_POW() -> ref<LifePathEvent> { return LPE(Text.FAT_POW_F(), Text.FAT_POW_M()); }
+    public static func MOT_INCR() -> ref<LifePathEvent> { return LPE(Text.MOT_INCR_F(), Text.MOT_INCR_M()); }
+    public static func FAT_INCR() -> ref<LifePathEvent> { return LPE(Text.FAT_INCR_F(), Text.FAT_INCR_M()); }
+    public static func MOT_DIE_NAT() -> ref<LifePathEvent> { return LPE(Text.MOT_DIE_NAT_F(), Text.MOT_DIE_NAT_M()); }
+    public static func FAT_DIE_NAT() -> ref<LifePathEvent> { return LPE(Text.FAT_DIE_NAT_F(), Text.FAT_DIE_NAT_M()); }
+    public static func MOT_WRK_CRP() -> ref<LifePathEvent> { return LPE(Text.MOT_WRK_CRP_F(), Text.MOT_WRK_CRP_M()); }
+    public static func FAT_WRK_CRP() -> ref<LifePathEvent> { return LPE(Text.FAT_WRK_CRP_F(), Text.FAT_WRK_CRP_M()); }
+    public static func MOT_MRD_CRP() -> ref<LifePathEvent> { return LPE(Text.MOT_MRD_CRP_F(), Text.MOT_MRD_CRP_M()); }
+    public static func FAT_MRD_CRP() -> ref<LifePathEvent> { return LPE(Text.FAT_MRD_CRP_F(), Text.FAT_MRD_CRP_M()); }
+    public static func MOT_KLD_WAR() -> ref<LifePathEvent> { return LPE(Text.MOT_KLD_WAR_F(), Text.MOT_KLD_WAR_M()); }
+    public static func FAT_KLD_WAR() -> ref<LifePathEvent> { return LPE(Text.FAT_KLD_WAR_F(), Text.FAT_KLD_WAR_M()); }
+    public static func MOT_DIED_ACC() -> ref<LifePathEvent> { return LPE(Text.MOT_DIED_ACC_F(), Text.MOT_DIED_ACC_M()); }
+    public static func FAT_DIED_ACC() -> ref<LifePathEvent> { return LPE(Text.FAT_DIED_ACC_F(), Text.FAT_DIED_ACC_M()); }
+    public static func MOT_HIDING() -> ref<LifePathEvent> { return LPE(Text.MOT_HIDING_F(), Text.MOT_HIDING_M()); }
+    public static func FAT_HIDING() -> ref<LifePathEvent> { return LPE(Text.FAT_HIDING_F(), Text.FAT_HIDING_M()); }
+    public static func MOT_MISSING() -> ref<LifePathEvent> { return LPE(Text.MOT_MISSING_F(), Text.MOT_MISSING_M()); }
+    public static func FAT_MISSING() -> ref<LifePathEvent> { return LPE(Text.FAT_MISSING_F(), Text.FAT_MISSING_M()); }
 
     // Home
     public static func LIVED_ALLEY() -> ref<LifePathEvent> { return LPE(Text.LIVED_ALLEY_F(), Text.LIVED_ALLEY_M()); }
@@ -107,10 +107,10 @@ public class Events {
     public static func LIVED_MNSION() -> ref<LifePathEvent> { return LPE(Text.LIVED_MNSION_F(), Text.LIVED_MNSION_M()); }
     public static func LIVED_NICE_TWNHME() -> ref<LifePathEvent> { return LPE(Text.LIVED_NICE_TWNHME_F(), Text.LIVED_NICE_TWNHME_M()); }
     public static func LIVED_RDS_CAR() -> ref<LifePathEvent> { return LPE(Text.LIVED_RDS_CAR_F(), Text.LIVED_RDS_CAR_M()); }
-	public static func LIVED_RSRCH_FCLY() -> ref<LifePathEvent> { return LPE(Text.LIVED_RSRCH_FCLY_F(), Text.LIVED_RSRCH_FCLY_M()); }
-	public static func LIVED_GTD_CRP() -> ref<LifePathEvent> { return LPE(Text.LIVED_GTD_CRP_F(), Text.LIVED_GTD_CRP_M()); }
-	public static func LIVED_VILLAGE() -> ref<LifePathEvent> { return LPE(Text.LIVED_VILLAGE_F(), Text.LIVED_VILLAGE_M()); }
-	public static func LIVED_SHACK() -> ref<LifePathEvent> { return LPE(Text.LIVED_SHACK_F(), Text.LIVED_SHACK_M()); }
+    public static func LIVED_RSRCH_FCLY() -> ref<LifePathEvent> { return LPE(Text.LIVED_RSRCH_FCLY_F(), Text.LIVED_RSRCH_FCLY_M()); }
+    public static func LIVED_GTD_CRP() -> ref<LifePathEvent> { return LPE(Text.LIVED_GTD_CRP_F(), Text.LIVED_GTD_CRP_M()); }
+    public static func LIVED_VILLAGE() -> ref<LifePathEvent> { return LPE(Text.LIVED_VILLAGE_F(), Text.LIVED_VILLAGE_M()); }
+    public static func LIVED_SHACK() -> ref<LifePathEvent> { return LPE(Text.LIVED_SHACK_F(), Text.LIVED_SHACK_M()); }
 
     // Childhood
     public static func JOINED_GANG() -> ref<LifePathEvent> { return LPE(Text.JOINED_GANG_F(), Text.JOINED_GANG_M()); }
@@ -164,102 +164,102 @@ public class Events {
     public static func EXPLR_SEWER() -> ref<LifePathEvent> { return LPE(Text.EXPLR_SEWER_F(), Text.EXPLR_SEWER_M()); }
     public static func BRK_CORPO_SYSTEM() -> ref<LifePathEvent> { return LPE(Text.BRK_CORPO_SYSTEM_F(), Text.BRK_CORPO_SYSTEM_M()); }
     public static func RBLD_SCRP_CAR() -> ref<LifePathEvent> { return LPE(Text.RBLD_SCRP_CAR_F(), Text.RBLD_SCRP_CAR_M()); }
-	public static func SCVG_STRP_CAR() -> ref<LifePathEvent> { return LPE(Text.SCVG_STRP_CAR_F(), Text.SCVG_STRP_CAR_M()); }
-	public static func PLAY_MUS_INST() -> ref<LifePathEvent> { return LPE(Text.PLAY_MUS_INST_F(), Text.PLAY_MUS_INST_M()); }
-	public static func VNDL_PUB_PRPTY() -> ref<LifePathEvent> { return LPE(Text.VNDL_PUB_PRPTY_F(), Text.VNDL_PUB_PRPTY_M()); }
-	public static func CDG_HKS_NET() -> ref<LifePathEvent> { return LPE(Text.CDG_HKS_NET_F(), Text.CDG_HKS_NET_M()); }
-	public static func HACK_CRP_STL() -> ref<LifePathEvent> { return LPE(Text.HACK_CRP_STL_F(), Text.HACK_CRP_STL_M()); }
-	public static func SPENT_NO_SUPV() -> ref<LifePathEvent> { return LPE(Text.SPENT_NO_SUPV_F(), Text.SPENT_NO_SUPV_M()); }
+    public static func SCVG_STRP_CAR() -> ref<LifePathEvent> { return LPE(Text.SCVG_STRP_CAR_F(), Text.SCVG_STRP_CAR_M()); }
+    public static func PLAY_MUS_INST() -> ref<LifePathEvent> { return LPE(Text.PLAY_MUS_INST_F(), Text.PLAY_MUS_INST_M()); }
+    public static func VNDL_PUB_PRPTY() -> ref<LifePathEvent> { return LPE(Text.VNDL_PUB_PRPTY_F(), Text.VNDL_PUB_PRPTY_M()); }
+    public static func CDG_HKS_NET() -> ref<LifePathEvent> { return LPE(Text.CDG_HKS_NET_F(), Text.CDG_HKS_NET_M()); }
+    public static func HACK_CRP_STL() -> ref<LifePathEvent> { return LPE(Text.HACK_CRP_STL_F(), Text.HACK_CRP_STL_M()); }
+    public static func SPENT_NO_SUPV() -> ref<LifePathEvent> { return LPE(Text.SPENT_NO_SUPV_F(), Text.SPENT_NO_SUPV_M()); }
 
     // First Job
-	public static func JOB_LOCAL_FIXER() -> ref<LifePathEvent> { return LPE(Text.JOB_LOCAL_FIXER_F(), Text.JOB_LOCAL_FIXER_M()); }
-	public static func JOB_WAGE_BODEGA() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_BODEGA_F(), Text.JOB_WAGE_BODEGA_M()); }
-	public static func JOB_WAGE_DEPT() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_DEPT_F(), Text.JOB_WAGE_DEPT_M()); }
-	public static func JOB_BOUNCER() -> ref<LifePathEvent> { return LPE(Text.JOB_BOUNCER_F(), Text.JOB_BOUNCER_M()); }
-	public static func JOB_HOMELESS() -> ref<LifePathEvent> { return LPE(Text.JOB_HOMELESS_F(), Text.JOB_HOMELESS_M()); }
-	public static func JOB_WAGE_GAS() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_GAS_F(), Text.JOB_WAGE_GAS_M()); }
-	public static func JOB_ROB_APT() -> ref<LifePathEvent> { return LPE(Text.JOB_ROB_APT_F(), Text.JOB_ROB_APT_M()); }
-	public static func JOB_JOYTOY_CHEAP() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_CHEAP_F(), Text.JOB_JOYTOY_CHEAP_M()); }
-	public static func JOB_JOYTOY_EXP() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_EXP_F(), Text.JOB_JOYTOY_EXP_M()); }
-	public static func JOB_SECURITY() -> ref<LifePathEvent> { return LPE(Text.JOB_SECURITY_F(), Text.JOB_SECURITY_M()); }
-	public static func JOB_RECEPTION() -> ref<LifePathEvent> { return LPE(Text.JOB_RECEPTION_F(), Text.JOB_RECEPTION_M()); }
-	public static func JOB_DESK_JOCKEY() -> ref<LifePathEvent> { return LPE(Text.JOB_DESK_JOCKEY_F(), Text.JOB_DESK_JOCKEY_M()); }
-	public static func JOB_WAGESLAVE() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGESLAVE_F(), Text.JOB_WAGESLAVE_M()); }
-	public static func JOB_CORPO_MANAGER() -> ref<LifePathEvent> { return LPE(Text.JOB_CORPO_MANAGER_F(), Text.JOB_CORPO_MANAGER_M()); }
-	public static func JOB_CORPO_EXEC() -> ref<LifePathEvent> { return LPE(Text.JOB_CORPO_EXEC_F(), Text.JOB_CORPO_EXEC_M()); }
-	public static func JOB_DAY_LABOR() -> ref<LifePathEvent> { return LPE(Text.JOB_DAY_LABOR_F(), Text.JOB_DAY_LABOR_M()); }
-	public static func JOB_FOOD_VNDR() -> ref<LifePathEvent> { return LPE(Text.JOB_FOOD_VNDR_F(), Text.JOB_FOOD_VNDR_M()); }
-	public static func JOB_SEX_TRADER() -> ref<LifePathEvent> { return LPE(Text.JOB_SEX_TRADER_F(), Text.JOB_SEX_TRADER_M()); }
-	public static func JOB_JOYTOY_BURAN() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_BURAN_F(), Text.JOB_JOYTOY_BURAN_M()); }
-	public static func JOB_KIDNAP_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_KIDNAP_CRP_F(), Text.JOB_KIDNAP_CRP_M()); }
-	public static func JOB_DRUG_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_DRUG_CRP_F(), Text.JOB_DRUG_CRP_M()); }
-	public static func JOB_SPORT_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SPORT_CRP_F(), Text.JOB_SPORT_CRP_M()); }
-	public static func JOB_SWORD() -> ref<LifePathEvent> { return LPE(Text.JOB_SWORD_F(), Text.JOB_SWORD_M()); }
-	public static func JOB_GUNS() -> ref<LifePathEvent> { return LPE(Text.JOB_GUNS_F(), Text.JOB_GUNS_M()); }
-	public static func JOB_DELIVER() -> ref<LifePathEvent> { return LPE(Text.JOB_DELIVER_F(), Text.JOB_DELIVER_M()); }
-	public static func JOB_SPY_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SPY_CRP_F(), Text.JOB_SPY_CRP_M()); }
-	public static func JOB_TEACHER() -> ref<LifePathEvent> { return LPE(Text.JOB_TEACHER_F(), Text.JOB_TEACHER_M()); }
-	public static func JOB_DOC_ASSIST() -> ref<LifePathEvent> { return LPE(Text.JOB_DOC_ASSIST_F(), Text.JOB_DOC_ASSIST_M()); }
-	public static func JOB_BARTEND() -> ref<LifePathEvent> { return LPE(Text.JOB_BARTEND_F(), Text.JOB_BARTEND_M()); }
-	public static func JOB_BOOTLEGGER() -> ref<LifePathEvent> { return LPE(Text.JOB_BOOTLEGGER_F(), Text.JOB_BOOTLEGGER_M()); }
-	public static func JOB_DRUG_RUNNER() -> ref<LifePathEvent> { return LPE(Text.JOB_DRUG_RUNNER_F(), Text.JOB_DRUG_RUNNER_M()); }
-	public static func JOB_ARMS_DEALER() -> ref<LifePathEvent> { return LPE(Text.JOB_ARMS_DEALER_F(), Text.JOB_ARMS_DEALER_M()); }
-	public static func JOB_SWEAT_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SWEAT_CRP_F(), Text.JOB_SWEAT_CRP_M()); }
-	public static func JOB_CYBER_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_CYBER_CRP_F(), Text.JOB_CYBER_CRP_M()); }
-	public static func JOB_MAG_STAND() -> ref<LifePathEvent> { return LPE(Text.JOB_MAG_STAND_F(), Text.JOB_MAG_STAND_M()); }
-	public static func JOB_BD_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_BD_CRP_F(), Text.JOB_BD_CRP_M()); }
+    public static func JOB_LOCAL_FIXER() -> ref<LifePathEvent> { return LPE(Text.JOB_LOCAL_FIXER_F(), Text.JOB_LOCAL_FIXER_M()); }
+    public static func JOB_WAGE_BODEGA() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_BODEGA_F(), Text.JOB_WAGE_BODEGA_M()); }
+    public static func JOB_WAGE_DEPT() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_DEPT_F(), Text.JOB_WAGE_DEPT_M()); }
+    public static func JOB_BOUNCER() -> ref<LifePathEvent> { return LPE(Text.JOB_BOUNCER_F(), Text.JOB_BOUNCER_M()); }
+    public static func JOB_HOMELESS() -> ref<LifePathEvent> { return LPE(Text.JOB_HOMELESS_F(), Text.JOB_HOMELESS_M()); }
+    public static func JOB_WAGE_GAS() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGE_GAS_F(), Text.JOB_WAGE_GAS_M()); }
+    public static func JOB_ROB_APT() -> ref<LifePathEvent> { return LPE(Text.JOB_ROB_APT_F(), Text.JOB_ROB_APT_M()); }
+    public static func JOB_JOYTOY_CHEAP() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_CHEAP_F(), Text.JOB_JOYTOY_CHEAP_M()); }
+    public static func JOB_JOYTOY_EXP() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_EXP_F(), Text.JOB_JOYTOY_EXP_M()); }
+    public static func JOB_SECURITY() -> ref<LifePathEvent> { return LPE(Text.JOB_SECURITY_F(), Text.JOB_SECURITY_M()); }
+    public static func JOB_RECEPTION() -> ref<LifePathEvent> { return LPE(Text.JOB_RECEPTION_F(), Text.JOB_RECEPTION_M()); }
+    public static func JOB_DESK_JOCKEY() -> ref<LifePathEvent> { return LPE(Text.JOB_DESK_JOCKEY_F(), Text.JOB_DESK_JOCKEY_M()); }
+    public static func JOB_WAGESLAVE() -> ref<LifePathEvent> { return LPE(Text.JOB_WAGESLAVE_F(), Text.JOB_WAGESLAVE_M()); }
+    public static func JOB_CORPO_MANAGER() -> ref<LifePathEvent> { return LPE(Text.JOB_CORPO_MANAGER_F(), Text.JOB_CORPO_MANAGER_M()); }
+    public static func JOB_CORPO_EXEC() -> ref<LifePathEvent> { return LPE(Text.JOB_CORPO_EXEC_F(), Text.JOB_CORPO_EXEC_M()); }
+    public static func JOB_DAY_LABOR() -> ref<LifePathEvent> { return LPE(Text.JOB_DAY_LABOR_F(), Text.JOB_DAY_LABOR_M()); }
+    public static func JOB_FOOD_VNDR() -> ref<LifePathEvent> { return LPE(Text.JOB_FOOD_VNDR_F(), Text.JOB_FOOD_VNDR_M()); }
+    public static func JOB_SEX_TRADER() -> ref<LifePathEvent> { return LPE(Text.JOB_SEX_TRADER_F(), Text.JOB_SEX_TRADER_M()); }
+    public static func JOB_JOYTOY_BURAN() -> ref<LifePathEvent> { return LPE(Text.JOB_JOYTOY_BURAN_F(), Text.JOB_JOYTOY_BURAN_M()); }
+    public static func JOB_KIDNAP_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_KIDNAP_CRP_F(), Text.JOB_KIDNAP_CRP_M()); }
+    public static func JOB_DRUG_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_DRUG_CRP_F(), Text.JOB_DRUG_CRP_M()); }
+    public static func JOB_SPORT_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SPORT_CRP_F(), Text.JOB_SPORT_CRP_M()); }
+    public static func JOB_SWORD() -> ref<LifePathEvent> { return LPE(Text.JOB_SWORD_F(), Text.JOB_SWORD_M()); }
+    public static func JOB_GUNS() -> ref<LifePathEvent> { return LPE(Text.JOB_GUNS_F(), Text.JOB_GUNS_M()); }
+    public static func JOB_DELIVER() -> ref<LifePathEvent> { return LPE(Text.JOB_DELIVER_F(), Text.JOB_DELIVER_M()); }
+    public static func JOB_SPY_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SPY_CRP_F(), Text.JOB_SPY_CRP_M()); }
+    public static func JOB_TEACHER() -> ref<LifePathEvent> { return LPE(Text.JOB_TEACHER_F(), Text.JOB_TEACHER_M()); }
+    public static func JOB_DOC_ASSIST() -> ref<LifePathEvent> { return LPE(Text.JOB_DOC_ASSIST_F(), Text.JOB_DOC_ASSIST_M()); }
+    public static func JOB_BARTEND() -> ref<LifePathEvent> { return LPE(Text.JOB_BARTEND_F(), Text.JOB_BARTEND_M()); }
+    public static func JOB_BOOTLEGGER() -> ref<LifePathEvent> { return LPE(Text.JOB_BOOTLEGGER_F(), Text.JOB_BOOTLEGGER_M()); }
+    public static func JOB_DRUG_RUNNER() -> ref<LifePathEvent> { return LPE(Text.JOB_DRUG_RUNNER_F(), Text.JOB_DRUG_RUNNER_M()); }
+    public static func JOB_ARMS_DEALER() -> ref<LifePathEvent> { return LPE(Text.JOB_ARMS_DEALER_F(), Text.JOB_ARMS_DEALER_M()); }
+    public static func JOB_SWEAT_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_SWEAT_CRP_F(), Text.JOB_SWEAT_CRP_M()); }
+    public static func JOB_CYBER_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_CYBER_CRP_F(), Text.JOB_CYBER_CRP_M()); }
+    public static func JOB_MAG_STAND() -> ref<LifePathEvent> { return LPE(Text.JOB_MAG_STAND_F(), Text.JOB_MAG_STAND_M()); }
+    public static func JOB_BD_CRP() -> ref<LifePathEvent> { return LPE(Text.JOB_BD_CRP_F(), Text.JOB_BD_CRP_M()); }
 
     // Adulthood
-	public static func LOST_GAMBLE() -> ref<LifePathEvent> { return LPE(Text.LOST_GAMBLE_F(), Text.LOST_GAMBLE_M()); }
-	public static func INST_NEW_AUG() -> ref<LifePathEvent> { return LPE(Text.INST_NEW_AUG_F(), Text.INST_NEW_AUG_M()); }
-	public static func RADIO_JOCKEY() -> ref<LifePathEvent> { return LPE(Text.RADIO_JOCKEY_F(), Text.RADIO_JOCKEY_M()); }
-	public static func CAR_ACCIDENT() -> ref<LifePathEvent> { return LPE(Text.CAR_ACCIDENT_F(), Text.CAR_ACCIDENT_M()); }
-	public static func BCME_CHEMHEAD() -> ref<LifePathEvent> { return LPE(Text.BCME_CHEMHEAD_F(), Text.BCME_CHEMHEAD_M()); }
-	public static func IMPRISONED() -> ref<LifePathEvent> { return LPE(Text.IMPRISONED_F(), Text.IMPRISONED_M()); }
-	public static func STOLE_EQP() -> ref<LifePathEvent> { return LPE(Text.STOLE_EQP_F(), Text.STOLE_EQP_M()); }
-	public static func ROB_BODEGA() -> ref<LifePathEvent> { return LPE(Text.ROB_BODEGA_F(), Text.ROB_BODEGA_M()); }
-	public static func JOIN_NEW_BAND() -> ref<LifePathEvent> { return LPE(Text.JOIN_NEW_BAND_F(), Text.JOIN_NEW_BAND_M()); }
-	public static func COMPLETED_JOB() -> ref<LifePathEvent> { return LPE(Text.COMPLETED_JOB_F(), Text.COMPLETED_JOB_M()); }
-	public static func RUN_CHEMS() -> ref<LifePathEvent> { return LPE(Text.RUN_CHEMS_F(), Text.RUN_CHEMS_M()); }
-	public static func WON_LOTTERY() -> ref<LifePathEvent> { return LPE(Text.WON_LOTTERY_F(), Text.WON_LOTTERY_M()); }
-	public static func BOUGHT_CAR() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_CAR_F(), Text.BOUGHT_CAR_M()); }
-	public static func NEW_APT() -> ref<LifePathEvent> { return LPE(Text.NEW_APT_F(), Text.NEW_APT_M()); }
-	public static func BOUGHT_GUN() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_GUN_F(), Text.BOUGHT_GUN_M()); }
-	public static func BOUGHT_SWORD() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_SWORD_F(), Text.BOUGHT_SWORD_M()); }
-	public static func JOINED_RIOT() -> ref<LifePathEvent> { return LPE(Text.JOINED_RIOT_F(), Text.JOINED_RIOT_M()); }
-	public static func KILLED_CHOOM() -> ref<LifePathEvent> { return LPE(Text.KILLED_CHOOM_F(), Text.KILLED_CHOOM_M()); }
-	public static func LOST_JOB() -> ref<LifePathEvent> { return LPE(Text.LOST_JOB_F(), Text.LOST_JOB_M()); }
-	public static func INDUSTRIAL_ACC() -> ref<LifePathEvent> { return LPE(Text.INDUSTRIAL_ACC_F(), Text.INDUSTRIAL_ACC_M()); }
-	public static func CODED_BOTNETS() -> ref<LifePathEvent> { return LPE(Text.CODED_BOTNETS_F(), Text.CODED_BOTNETS_M()); }
-	public static func ROB_VENDOR() -> ref<LifePathEvent> { return LPE(Text.ROB_VENDOR_F(), Text.ROB_VENDOR_M()); }
-	public static func TOB_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.TOB_CONSUMER_F(), Text.TOB_CONSUMER_M()); }
-	public static func AL_BEV_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.AL_BEV_CONSUMER_F(), Text.AL_BEV_CONSUMER_M()); }
-	public static func WATER_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.WATER_CONSUMER_F(), Text.WATER_CONSUMER_M()); }
-	public static func JOYTOY_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.JOYTOY_CONSUMER_F(), Text.JOYTOY_CONSUMER_M()); }
-	public static func BD_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.BD_CONSUMER_F(), Text.BD_CONSUMER_M()); }
-	public static func BD_ADDICT() -> ref<LifePathEvent> { return LPE(Text.BD_ADDICT_F(), Text.BD_ADDICT_M()); }
-	public static func RELIC_ASPIRANT() -> ref<LifePathEvent> { return LPE(Text.RELIC_ASPIRANT_F(), Text.RELIC_ASPIRANT_M()); }
-	public static func BOUGHT_SHARD() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_SHARD_F(), Text.BOUGHT_SHARD_M()); }
-	public static func BOUGHT_CYBER() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_CYBER_F(), Text.BOUGHT_CYBER_M()); }
-	public static func TWO_AM_CLUB() -> ref<LifePathEvent> { return LPE(Text.TWO_AM_CLUB_F(), Text.TWO_AM_CLUB_M()); }
-	public static func ROBOT_DEST() -> ref<LifePathEvent> { return LPE(Text.ROBOT_DEST_F(), Text.ROBOT_DEST_M()); }
-	public static func CANCEL_TTI() -> ref<LifePathEvent> { return LPE(Text.CANCEL_TTI_F(), Text.CANCEL_TTI_M()); }
-	public static func FILED_FRD_INS() -> ref<LifePathEvent> { return LPE(Text.FILED_FRD_INS_F(), Text.FILED_FRD_INS_M()); }
-	public static func ASST_SZD_CRP() -> ref<LifePathEvent> { return LPE(Text.ASST_SZD_CRP_F(), Text.ASST_SZD_CRP_M()); }
-	public static func CHRG_BK_DBTR() -> ref<LifePathEvent> { return LPE(Text.CHRG_BK_DBTR_F(), Text.CHRG_BK_DBTR_M()); }
-	public static func CHRG_MED_DBT() -> ref<LifePathEvent> { return LPE(Text.CHRG_MED_DBT_F(), Text.CHRG_MED_DBT_M()); }
-	public static func INDEBT_CRP_INDVL() -> ref<LifePathEvent> { return LPE(Text.INDEBT_CRP_INDVL_F(), Text.INDEBT_CRP_INDVL_M()); }
-	public static func CRP_LBLTY_DFDT() -> ref<LifePathEvent> { return LPE(Text.CRP_LBLTY_DFDT_F(), Text.CRP_LBLTY_DFDT_M()); }
-	public static func CRP_POL_VIO() -> ref<LifePathEvent> { return LPE(Text.CRP_POL_VIO_F(), Text.CRP_POL_VIO_M()); }
-	public static func HAB_CRP_DBTR() -> ref<LifePathEvent> { return LPE(Text.HAB_CRP_DBTR_F(), Text.HAB_CRP_DBTR_M()); }
-	public static func ARMED_DANGER() -> ref<LifePathEvent> { return LPE(Text.ARMED_DANGER_F(), Text.ARMED_DANGER_M()); }
-	public static func FLSLY_ACC_MRDR() -> ref<LifePathEvent> { return LPE(Text.FLSLY_ACC_MRDR_F(), Text.FLSLY_ACC_MRDR_M()); }
-	public static func FREE_CRP_MRDR() -> ref<LifePathEvent> { return LPE(Text.FREE_CRP_MRDR_F(), Text.FREE_CRP_MRDR_M()); }
-	public static func VAC_AFRICA() -> ref<LifePathEvent> { return LPE(Text.VAC_AFRICA_F(), Text.VAC_AFRICA_M()); }
-	public static func JUMP_TRAFFIC() -> ref<LifePathEvent> { return LPE(Text.JUMP_TRAFFIC_F(), Text.JUMP_TRAFFIC_M()); }
-	public static func BUILD_BOMB() -> ref<LifePathEvent> { return LPE(Text.BUILD_BOMB_F(), Text.BUILD_BOMB_M()); }
-	public static func EMAIL_GOV() -> ref<LifePathEvent> { return LPE(Text.EMAIL_GOV_F(), Text.EMAIL_GOV_M()); }
-	public static func FREE_TTI() -> ref<LifePathEvent> { return LPE(Text.FREE_TTI_F(), Text.FREE_TTI_M()); }
+    public static func LOST_GAMBLE() -> ref<LifePathEvent> { return LPE(Text.LOST_GAMBLE_F(), Text.LOST_GAMBLE_M()); }
+    public static func INST_NEW_AUG() -> ref<LifePathEvent> { return LPE(Text.INST_NEW_AUG_F(), Text.INST_NEW_AUG_M()); }
+    public static func RADIO_JOCKEY() -> ref<LifePathEvent> { return LPE(Text.RADIO_JOCKEY_F(), Text.RADIO_JOCKEY_M()); }
+    public static func CAR_ACCIDENT() -> ref<LifePathEvent> { return LPE(Text.CAR_ACCIDENT_F(), Text.CAR_ACCIDENT_M()); }
+    public static func BCME_CHEMHEAD() -> ref<LifePathEvent> { return LPE(Text.BCME_CHEMHEAD_F(), Text.BCME_CHEMHEAD_M()); }
+    public static func IMPRISONED() -> ref<LifePathEvent> { return LPE(Text.IMPRISONED_F(), Text.IMPRISONED_M()); }
+    public static func STOLE_EQP() -> ref<LifePathEvent> { return LPE(Text.STOLE_EQP_F(), Text.STOLE_EQP_M()); }
+    public static func ROB_BODEGA() -> ref<LifePathEvent> { return LPE(Text.ROB_BODEGA_F(), Text.ROB_BODEGA_M()); }
+    public static func JOIN_NEW_BAND() -> ref<LifePathEvent> { return LPE(Text.JOIN_NEW_BAND_F(), Text.JOIN_NEW_BAND_M()); }
+    public static func COMPLETED_JOB() -> ref<LifePathEvent> { return LPE(Text.COMPLETED_JOB_F(), Text.COMPLETED_JOB_M()); }
+    public static func RUN_CHEMS() -> ref<LifePathEvent> { return LPE(Text.RUN_CHEMS_F(), Text.RUN_CHEMS_M()); }
+    public static func WON_LOTTERY() -> ref<LifePathEvent> { return LPE(Text.WON_LOTTERY_F(), Text.WON_LOTTERY_M()); }
+    public static func BOUGHT_CAR() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_CAR_F(), Text.BOUGHT_CAR_M()); }
+    public static func NEW_APT() -> ref<LifePathEvent> { return LPE(Text.NEW_APT_F(), Text.NEW_APT_M()); }
+    public static func BOUGHT_GUN() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_GUN_F(), Text.BOUGHT_GUN_M()); }
+    public static func BOUGHT_SWORD() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_SWORD_F(), Text.BOUGHT_SWORD_M()); }
+    public static func JOINED_RIOT() -> ref<LifePathEvent> { return LPE(Text.JOINED_RIOT_F(), Text.JOINED_RIOT_M()); }
+    public static func KILLED_CHOOM() -> ref<LifePathEvent> { return LPE(Text.KILLED_CHOOM_F(), Text.KILLED_CHOOM_M()); }
+    public static func LOST_JOB() -> ref<LifePathEvent> { return LPE(Text.LOST_JOB_F(), Text.LOST_JOB_M()); }
+    public static func INDUSTRIAL_ACC() -> ref<LifePathEvent> { return LPE(Text.INDUSTRIAL_ACC_F(), Text.INDUSTRIAL_ACC_M()); }
+    public static func CODED_BOTNETS() -> ref<LifePathEvent> { return LPE(Text.CODED_BOTNETS_F(), Text.CODED_BOTNETS_M()); }
+    public static func ROB_VENDOR() -> ref<LifePathEvent> { return LPE(Text.ROB_VENDOR_F(), Text.ROB_VENDOR_M()); }
+    public static func TOB_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.TOB_CONSUMER_F(), Text.TOB_CONSUMER_M()); }
+    public static func AL_BEV_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.AL_BEV_CONSUMER_F(), Text.AL_BEV_CONSUMER_M()); }
+    public static func WATER_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.WATER_CONSUMER_F(), Text.WATER_CONSUMER_M()); }
+    public static func JOYTOY_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.JOYTOY_CONSUMER_F(), Text.JOYTOY_CONSUMER_M()); }
+    public static func BD_CONSUMER() -> ref<LifePathEvent> { return LPE(Text.BD_CONSUMER_F(), Text.BD_CONSUMER_M()); }
+    public static func BD_ADDICT() -> ref<LifePathEvent> { return LPE(Text.BD_ADDICT_F(), Text.BD_ADDICT_M()); }
+    public static func RELIC_ASPIRANT() -> ref<LifePathEvent> { return LPE(Text.RELIC_ASPIRANT_F(), Text.RELIC_ASPIRANT_M()); }
+    public static func BOUGHT_SHARD() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_SHARD_F(), Text.BOUGHT_SHARD_M()); }
+    public static func BOUGHT_CYBER() -> ref<LifePathEvent> { return LPE(Text.BOUGHT_CYBER_F(), Text.BOUGHT_CYBER_M()); }
+    public static func TWO_AM_CLUB() -> ref<LifePathEvent> { return LPE(Text.TWO_AM_CLUB_F(), Text.TWO_AM_CLUB_M()); }
+    public static func ROBOT_DEST() -> ref<LifePathEvent> { return LPE(Text.ROBOT_DEST_F(), Text.ROBOT_DEST_M()); }
+    public static func CANCEL_TTI() -> ref<LifePathEvent> { return LPE(Text.CANCEL_TTI_F(), Text.CANCEL_TTI_M()); }
+    public static func FILED_FRD_INS() -> ref<LifePathEvent> { return LPE(Text.FILED_FRD_INS_F(), Text.FILED_FRD_INS_M()); }
+    public static func ASST_SZD_CRP() -> ref<LifePathEvent> { return LPE(Text.ASST_SZD_CRP_F(), Text.ASST_SZD_CRP_M()); }
+    public static func CHRG_BK_DBTR() -> ref<LifePathEvent> { return LPE(Text.CHRG_BK_DBTR_F(), Text.CHRG_BK_DBTR_M()); }
+    public static func CHRG_MED_DBT() -> ref<LifePathEvent> { return LPE(Text.CHRG_MED_DBT_F(), Text.CHRG_MED_DBT_M()); }
+    public static func INDEBT_CRP_INDVL() -> ref<LifePathEvent> { return LPE(Text.INDEBT_CRP_INDVL_F(), Text.INDEBT_CRP_INDVL_M()); }
+    public static func CRP_LBLTY_DFDT() -> ref<LifePathEvent> { return LPE(Text.CRP_LBLTY_DFDT_F(), Text.CRP_LBLTY_DFDT_M()); }
+    public static func CRP_POL_VIO() -> ref<LifePathEvent> { return LPE(Text.CRP_POL_VIO_F(), Text.CRP_POL_VIO_M()); }
+    public static func HAB_CRP_DBTR() -> ref<LifePathEvent> { return LPE(Text.HAB_CRP_DBTR_F(), Text.HAB_CRP_DBTR_M()); }
+    public static func ARMED_DANGER() -> ref<LifePathEvent> { return LPE(Text.ARMED_DANGER_F(), Text.ARMED_DANGER_M()); }
+    public static func FLSLY_ACC_MRDR() -> ref<LifePathEvent> { return LPE(Text.FLSLY_ACC_MRDR_F(), Text.FLSLY_ACC_MRDR_M()); }
+    public static func FREE_CRP_MRDR() -> ref<LifePathEvent> { return LPE(Text.FREE_CRP_MRDR_F(), Text.FREE_CRP_MRDR_M()); }
+    public static func VAC_AFRICA() -> ref<LifePathEvent> { return LPE(Text.VAC_AFRICA_F(), Text.VAC_AFRICA_M()); }
+    public static func JUMP_TRAFFIC() -> ref<LifePathEvent> { return LPE(Text.JUMP_TRAFFIC_F(), Text.JUMP_TRAFFIC_M()); }
+    public static func BUILD_BOMB() -> ref<LifePathEvent> { return LPE(Text.BUILD_BOMB_F(), Text.BUILD_BOMB_M()); }
+    public static func EMAIL_GOV() -> ref<LifePathEvent> { return LPE(Text.EMAIL_GOV_F(), Text.EMAIL_GOV_M()); }
+    public static func FREE_TTI() -> ref<LifePathEvent> { return LPE(Text.FREE_TTI_F(), Text.FREE_TTI_M()); }
 
 }
 
@@ -308,33 +308,33 @@ public static func UpbringingEvents(
     PushWeightedLifeEvent(events, Events.CONGT_DEFECT(), 1);
     PushWeightedLifeEvent(events, Events.CORPO_DEBT(), 1 + JUNKIE_MOD/ 2);
     PushWeightedLifeEvent(events, Events.FAM_KLD_NCPD(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.PAT_GNG_WRFR(), NEG_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.PAT_AVRG_CTZN(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.PAT_WLTH_CTZN(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_UNID(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_UNID(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_KLD_NCPD(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_KLD_NCPD(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_KLD_MXTC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_KLD_MXTC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_POW(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_POW(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_INCR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_INCR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_DIE_NAT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_DIE_NAT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_WRK_CRP(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_WRK_CRP(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_MRD_CRP(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_MRD_CRP(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_KLD_WAR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_KLD_WAR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_DIED_ACC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_DIED_ACC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_HIDING(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_HIDING(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.MOT_MISSING(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FAT_MISSING(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.PAT_GNG_WRFR(), NEG_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.PAT_AVRG_CTZN(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.PAT_WLTH_CTZN(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_UNID(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_UNID(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_KLD_NCPD(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_KLD_NCPD(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_KLD_MXTC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_KLD_MXTC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_POW(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_POW(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_INCR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_INCR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_DIE_NAT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_DIE_NAT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_WRK_CRP(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_WRK_CRP(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_MRD_CRP(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_MRD_CRP(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_KLD_WAR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_KLD_WAR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_DIED_ACC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_DIED_ACC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_HIDING(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_HIDING(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.MOT_MISSING(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FAT_MISSING(), NEG_OUTCOME_WGT);
     return events;
 }
 
@@ -389,10 +389,10 @@ public static func HomeEvents(
     PushWeightedLifeEvent(events, Events.LIVED_MNSION(), POS_OUTCOME_WGT);
     PushWeightedLifeEvent(events, Events.LIVED_NICE_TWNHME(), POS_OUTCOME_WGT);
     PushWeightedLifeEvent(events, Events.LIVED_RDS_CAR(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.LIVED_RSRCH_FCLY(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.LIVED_GTD_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.LIVED_VILLAGE(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.LIVED_SHACK(), NEU_OUTCOME_WGT + NOMAD_MOD);
+    PushWeightedLifeEvent(events, Events.LIVED_RSRCH_FCLY(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.LIVED_GTD_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.LIVED_VILLAGE(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.LIVED_SHACK(), NEU_OUTCOME_WGT + NOMAD_MOD);
     return events;
 }
 
@@ -458,12 +458,12 @@ public static func ChildhoodEvents(
     PushWeightedLifeEvent(events, Events.EXPLR_SEWER(), NEU_OUTCOME_WGT);
     PushWeightedLifeEvent(events, Events.BRK_CORPO_SYSTEM(), NEU_OUTCOME_WGT);
     PushWeightedLifeEvent(events, Events.RBLD_SCRP_CAR(), POS_OUTCOME_WGT + NOMAD_MOD);
-	PushWeightedLifeEvent(events, Events.SCVG_STRP_CAR(), POS_OUTCOME_WGT + NOMAD_MOD);
-	PushWeightedLifeEvent(events, Events.PLAY_MUS_INST(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.VNDL_PUB_PRPTY(), NEG_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.CDG_HKS_NET(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.HACK_CRP_STL(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.SPENT_NO_SUPV(), NEG_OUTCOME_WGT + GANGER_MOD + HOMELESS_MOD  + JUNKIE_MOD);
+    PushWeightedLifeEvent(events, Events.SCVG_STRP_CAR(), POS_OUTCOME_WGT + NOMAD_MOD);
+    PushWeightedLifeEvent(events, Events.PLAY_MUS_INST(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.VNDL_PUB_PRPTY(), NEG_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.CDG_HKS_NET(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.HACK_CRP_STL(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.SPENT_NO_SUPV(), NEG_OUTCOME_WGT + GANGER_MOD + HOMELESS_MOD  + JUNKIE_MOD);
 
     return events;
 }
@@ -480,41 +480,41 @@ public static func JobEvents(
 ) -> array<ref<LifePathEvent>>  {
     let events: array<ref<LifePathEvent>>;
     PushWeightedLifeEvent(events, Events.JOB_LOCAL_FIXER(), NEU_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_WAGE_BODEGA(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_WAGE_DEPT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_BOUNCER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_HOMELESS(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_WAGE_GAS(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_ROB_APT(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_JOYTOY_CHEAP(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_JOYTOY_EXP(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_SECURITY(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_RECEPTION(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_DESK_JOCKEY(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_WAGESLAVE(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_CORPO_MANAGER(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_CORPO_EXEC(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_DAY_LABOR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_FOOD_VNDR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_SEX_TRADER(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_JOYTOY_BURAN(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_KIDNAP_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_DRUG_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_SPORT_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_SWORD(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_GUNS(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_DELIVER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_SPY_CRP(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_TEACHER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_DOC_ASSIST(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_BARTEND(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_BOOTLEGGER(), NEU_OUTCOME_WGT + NOMAD_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_DRUG_RUNNER(), NEU_OUTCOME_WGT + NOMAD_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_ARMS_DEALER(), NEU_OUTCOME_WGT + NOMAD_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_SWEAT_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_CYBER_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOB_MAG_STAND(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOB_BD_CRP(), NEG_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_WAGE_BODEGA(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_WAGE_DEPT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_BOUNCER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_HOMELESS(), NEG_OUTCOME_WGT + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_WAGE_GAS(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_ROB_APT(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_JOYTOY_CHEAP(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_JOYTOY_EXP(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_SECURITY(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_RECEPTION(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_DESK_JOCKEY(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_WAGESLAVE(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_CORPO_MANAGER(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_CORPO_EXEC(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_DAY_LABOR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_FOOD_VNDR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_SEX_TRADER(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_JOYTOY_BURAN(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_KIDNAP_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_DRUG_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_SPORT_CRP(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_SWORD(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_GUNS(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_DELIVER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_SPY_CRP(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_TEACHER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_DOC_ASSIST(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_BARTEND(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_BOOTLEGGER(), NEU_OUTCOME_WGT + NOMAD_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_DRUG_RUNNER(), NEU_OUTCOME_WGT + NOMAD_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_ARMS_DEALER(), NEU_OUTCOME_WGT + NOMAD_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_SWEAT_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_CYBER_CRP(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOB_MAG_STAND(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOB_BD_CRP(), NEG_OUTCOME_WGT + CORPO_MOD);
     return events;
 }
 
@@ -530,55 +530,55 @@ public static func AdultEvents(
 ) -> array<ref<LifePathEvent>>  {
     let events: array<ref<LifePathEvent>>;
     PushWeightedLifeEvent(events, Events.LOST_GAMBLE(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.INST_NEW_AUG(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.RADIO_JOCKEY(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.CAR_ACCIDENT(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BCME_CHEMHEAD(), NEG_OUTCOME_WGT + JUNKIE_MOD + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.IMPRISONED(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.STOLE_EQP(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.ROB_BODEGA(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.JOIN_NEW_BAND(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.COMPLETED_JOB(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.RUN_CHEMS(), NEG_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.WON_LOTTERY(), 5);
-	PushWeightedLifeEvent(events, Events.BOUGHT_CAR(), POS_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.NEW_APT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BOUGHT_GUN(), NEU_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.BOUGHT_SWORD(), NEU_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.JOINED_RIOT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.KILLED_CHOOM(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.LOST_JOB(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.INDUSTRIAL_ACC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.CODED_BOTNETS(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.ROB_VENDOR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.TOB_CONSUMER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.AL_BEV_CONSUMER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.WATER_CONSUMER(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JOYTOY_CONSUMER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BD_CONSUMER(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BD_ADDICT(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.RELIC_ASPIRANT(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BOUGHT_SHARD(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.BOUGHT_CYBER(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.TWO_AM_CLUB(), NEU_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.ROBOT_DEST(), NEU_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.CANCEL_TTI(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FILED_FRD_INS(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.ASST_SZD_CRP(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.CHRG_BK_DBTR(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.CHRG_MED_DBT(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.INDEBT_CRP_INDVL(), NEG_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.CRP_LBLTY_DFDT(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.CRP_POL_VIO(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.HAB_CRP_DBTR(), NEG_OUTCOME_WGT + HOMELESS_MOD);
-	PushWeightedLifeEvent(events, Events.ARMED_DANGER(), NEG_OUTCOME_WGT + GANGER_MOD);
-	PushWeightedLifeEvent(events, Events.FLSLY_ACC_MRDR(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.FREE_CRP_MRDR(), NEU_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.VAC_AFRICA(), POS_OUTCOME_WGT + CORPO_MOD);
-	PushWeightedLifeEvent(events, Events.JUMP_TRAFFIC(), NEG_OUTCOME_WGT);
-	PushWeightedLifeEvent(events, Events.BUILD_BOMB(), NEG_OUTCOME_WGT/2);
-	PushWeightedLifeEvent(events, Events.EMAIL_GOV(), 10);
-	PushWeightedLifeEvent(events, Events.FREE_TTI(), 10);
+    PushWeightedLifeEvent(events, Events.INST_NEW_AUG(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.RADIO_JOCKEY(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.CAR_ACCIDENT(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BCME_CHEMHEAD(), NEG_OUTCOME_WGT + JUNKIE_MOD + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.IMPRISONED(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.STOLE_EQP(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.ROB_BODEGA(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.JOIN_NEW_BAND(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.COMPLETED_JOB(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.RUN_CHEMS(), NEG_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.WON_LOTTERY(), 5);
+    PushWeightedLifeEvent(events, Events.BOUGHT_CAR(), POS_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.NEW_APT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BOUGHT_GUN(), NEU_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.BOUGHT_SWORD(), NEU_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.JOINED_RIOT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.KILLED_CHOOM(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.LOST_JOB(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.INDUSTRIAL_ACC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.CODED_BOTNETS(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.ROB_VENDOR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.TOB_CONSUMER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.AL_BEV_CONSUMER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.WATER_CONSUMER(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JOYTOY_CONSUMER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BD_CONSUMER(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BD_ADDICT(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.RELIC_ASPIRANT(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BOUGHT_SHARD(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.BOUGHT_CYBER(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.TWO_AM_CLUB(), NEU_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.ROBOT_DEST(), NEU_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.CANCEL_TTI(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FILED_FRD_INS(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.ASST_SZD_CRP(), NEG_OUTCOME_WGT + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.CHRG_BK_DBTR(), NEG_OUTCOME_WGT + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.CHRG_MED_DBT(), NEG_OUTCOME_WGT + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.INDEBT_CRP_INDVL(), NEG_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.CRP_LBLTY_DFDT(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.CRP_POL_VIO(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.HAB_CRP_DBTR(), NEG_OUTCOME_WGT + HOMELESS_MOD);
+    PushWeightedLifeEvent(events, Events.ARMED_DANGER(), NEG_OUTCOME_WGT + GANGER_MOD);
+    PushWeightedLifeEvent(events, Events.FLSLY_ACC_MRDR(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.FREE_CRP_MRDR(), NEU_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.VAC_AFRICA(), POS_OUTCOME_WGT + CORPO_MOD);
+    PushWeightedLifeEvent(events, Events.JUMP_TRAFFIC(), NEG_OUTCOME_WGT);
+    PushWeightedLifeEvent(events, Events.BUILD_BOMB(), NEG_OUTCOME_WGT/2);
+    PushWeightedLifeEvent(events, Events.EMAIL_GOV(), 10);
+    PushWeightedLifeEvent(events, Events.FREE_TTI(), 10);
 
     return events;
 }

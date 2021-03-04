@@ -160,7 +160,7 @@ public const func CompileScannerChunks() -> Bool {
       scannerBlackboard.SetVariant(GetAllBlackboardDefs().UI_ScannerModules.ScannerName, ToVariant(nameChunk));
     };
 
-    if this.IsCrowd() {    
+    if this.IsCrowd() && !characterRecord.IsChild() {    
         let descriptionString = this.GenerateCharacterBackground();
         descriptionChunk = new ScannerVehicleInfo();
         descriptionChunk.Set(descriptionString);

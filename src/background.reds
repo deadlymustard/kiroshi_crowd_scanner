@@ -88,7 +88,6 @@ public func getCorrespondingIndex(arr: array<Int32>, val: Int32) -> Int32 {
 
 public func GetRandomCorpo(seed: Int32) -> String {
   let corpos: array<String>;
-  ArrayPush(corpos, "Network News 54");
   ArrayPush(corpos, "Nippon Network");
   ArrayPush(corpos, "Diverse Media Systems");
   ArrayPush(corpos, "World News Service");
@@ -111,7 +110,7 @@ public func GetRandomCorpo(seed: Int32) -> String {
   ArrayPush(corpos, "Microtech");
   ArrayPush(corpos, "Zetatech");
   ArrayPush(corpos, "Adrek Robotics");
-  ArrayPush(corpos, "Akagi Systems Incorporated");
+  ArrayPush(corpos, "Akagi Systems");
   ArrayPush(corpos, "Bakumatsu Chipmasters");
   ArrayPush(corpos, "Biotechnica");
   ArrayPush(corpos, "Cyphire Cyberware");
@@ -121,7 +120,15 @@ public func GetRandomCorpo(seed: Int32) -> String {
   ArrayPush(corpos, "Kiroshi Opticals");
   ArrayPush(corpos, "Trauma Team International");
   ArrayPush(corpos, "Merrill, Asukaga, & Finch");
-
+  ArrayPush(corpos, "Toyota Motor");
+  ArrayPush(corpos, "Fuyutsuki Electronics");
+  ArrayPush(corpos, "Orbital Air");
+  ArrayPush(corpos, "WorldSat Communications Network");
+  ArrayPush(corpos, "EuroBank");
+  ArrayPush(corpos, "Fujiwara");
+  ArrayPush(corpos, "InfoComp");
+  ArrayPush(corpos, "Bakeneko");
+  
   let corpoVal = RandRange(seed + 41948, 0, ArraySize(corpos)-1);
 
   return corpos[corpoVal];

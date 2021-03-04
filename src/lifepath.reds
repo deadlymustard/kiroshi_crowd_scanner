@@ -69,13 +69,13 @@ public class LifePathPossibilities {
             positiveOutcomeWeight = 100;
             neutralOutcomeWeight = 5;
             negativeOutcomeWeight = 0;
-            corpoMod = 50;
+            corpoMod = 75;
         };
         if Equals(archetype, "CORPO_DRONE") {
             positiveOutcomeWeight = 85;
             neutralOutcomeWeight = 10;
             negativeOutcomeWeight = 5;
-            corpoMod = 25;
+            corpoMod = 30;
         };
         if Equals(archetype, "NOMAD") {
             positiveOutcomeWeight = 10;
@@ -84,19 +84,19 @@ public class LifePathPossibilities {
             nomadMod = 100;
         };
         if Equals(archetype, "HOMELESS") {
-            positiveOutcomeWeight = 10;
+            positiveOutcomeWeight = 1;
             neutralOutcomeWeight = 20;
-            negativeOutcomeWeight = 70;
+            negativeOutcomeWeight = 79;
         };
         if Equals(archetype, "JUNKIE") {
-            positiveOutcomeWeight = 5;
+            positiveOutcomeWeight = 3;
             neutralOutcomeWeight = 15;
-            negativeOutcomeWeight = 80;
+            negativeOutcomeWeight = 82;
             junkieMod = 30;
         };
         if Equals(archetype, "LOWLIFE") {
-            positiveOutcomeWeight = 20;
-            neutralOutcomeWeight = 30;
+            positiveOutcomeWeight = 15;
+            neutralOutcomeWeight = 35;
             negativeOutcomeWeight = 50;
         };
         if Equals(archetype, "GANGER") {

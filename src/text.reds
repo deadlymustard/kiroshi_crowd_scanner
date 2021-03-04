@@ -579,7 +579,7 @@ public class Text {
     public static func JOB_SWORD_F() -> String { return "Started work as a swordsmith for the %corp% Corporation. "; }
     public static func JOB_SWORD_M() -> String { return ""; }
 
-    public static func JOB_GUNS_F() -> String { return "Started work as a gunsmith the %corp% Corporation. "; }
+    public static func JOB_GUNS_F() -> String { return "Started work as a gunsmith for the %corp% Corporation. "; }
     public static func JOB_GUNS_M() -> String { return ""; }
 
     public static func JOB_DELIVER_F() -> String { return "Started work as a delivery driver for vending machines. "; }

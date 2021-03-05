@@ -17,6 +17,13 @@
 */
 public class Text {
 
+    // Static Scanner Texts
+    public static func SCANNER_BACKGROUND() -> String { return "Background"; }
+    public static func SCANNER_CHILDHOOD() -> String { return "Early Life"; }
+    public static func SCANNER_SIG_EVENTS() -> String { return "Significant Events"; }
+    public static func SCANNER_FOOTER() -> String { return "© InfoComp 2077. All rights reserved."; }
+
+
     // Upbringing
     public static func LVG_MOT_FAT_F() -> String { return "Grew up with a loving mother and father. "; }
     public static func LVG_MOT_FAT_M() -> String { return ""; }

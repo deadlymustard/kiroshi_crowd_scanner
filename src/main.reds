@@ -19,7 +19,7 @@ private func GenerateCharacterBackground() -> String {
     lifePath.Initialize("female", resolvedCrowdArchetype);
   }
 
-  let footerString = "\n\n© InfoComp 2077. All rights reserved.";
+  let footerString = "\n\n" + Text.SCANNER_FOOTER();
   let backgroundString = GenerateBackgroundStory(seed, lifePath);
 
   Log("Entity ID Hash: " + IntToString(entityIDHash), shouldPrintDebugLog());

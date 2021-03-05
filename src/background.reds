@@ -1,10 +1,10 @@
 public func GenerateBackgroundStory(seed: Int32, lifePath: ref<LifePath>) -> String {
-  return "Background_\n" 
+  return Text.SCANNER_BACKGROUND() + "_\n" 
     + GenerateChildhoodHome(seed, lifePath) 
     + GenerateUpbringingEvent(seed, lifePath) 
-    + "\n\nEarly Life_\n"
+    + "\n\n" + Text.SCANNER_CHILDHOOD() + "_\n"
     + GenerateChildhoodEvents(seed, lifePath)
-    + "\n\nSignificant Events_\n" 
+    + "\n\n" + Text.SCANNER_SIG_EVENTS() + "_\n" 
     + GenerateFirstJob(seed, lifePath) 
     + GenerateAdultEvents(seed, lifePath);
 }

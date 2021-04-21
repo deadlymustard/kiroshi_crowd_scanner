@@ -5,7 +5,7 @@ private func GenerateCharacterBackground() -> String {
   let name = LocKeyToString(characterRecord.DisplayName());
 
   let entityIDHash: Int32 = Cast(EntityID.GetHash(this.GetEntityID()));
-  let seed = RandRange(entityIDHash, 0, 9999999999);
+  let seed = RandRange(entityIDHash, 0, 2147483647);
 
 
   let resolvedCrowdArchetype = GetCrowdArchetype(NameToString(this.GetCurrentAppearanceName()));

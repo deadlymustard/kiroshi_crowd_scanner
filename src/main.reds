@@ -60,53 +60,48 @@ public func GetCrowdArchetype(appearanceName: String) -> String {
 
 @replaceMethod(NPCPuppet)
 public const func CompileScannerChunks() -> Bool {
-    let i: Int32;
-    let k: Int32;
-    let z: Int32;
-    let thisEntity: ref<GameObject>;
-    let nameChunk: ref<ScannerName>;
-    let levelChunk: ref<ScannerLevel>;
-    let rarityChunk: ref<ScannerRarity>;
-    let archtypeChunk: ref<ScannerArchetype>;
-    let networkStatusChunk: ref<ScannerNetworkStatus>;
-    let factionChunk: ref<ScannerFaction>;
-    let attitudeChunk: ref<ScannerAttitude>;
-    let healthChunk: ref<ScannerHealth>;
-    let bountyChunk: ref<ScannerBountySystem>;
-    let basicWeaponChunk: ref<ScannerWeaponBasic>;
-    let detailedWeaponChunk: ref<ScannerWeaponDetailed>;
-    let vulnerabilitiesChunk: ref<ScannerVulnerabilities>;
-    let resistancesChunk: ref<ScannerResistances>;
-    let abilityChunk: ref<ScannerAbilities>;
-    let descriptionChunk: ref<ScannerVehicleInfo>;
-    let abilities: array<wref<GameplayAbility_Record>>;
-    let statPoolSystem: ref<StatPoolsSystem>;
-    let bountyUI: BountyUI;
-    let vulnerability: Vulnerability;
-    let resists: array<ScannerStatDetails>;
-    let puppetQuickHack: wref<ObjectAction_Record>;
-    let availablePlayerActions: array<TweakDBID>;
-    let quickHackActionRecords: array<wref<ObjectAction_Record>>;
-    let context: GetActionsContext;
-    let choices: array<InteractionChoice>;
-    let archetypeName: CName;
-    let archetypeType: gamedataArchetypeType;
     let NPCName: String;
-    let nameParams: ref<inkTextParams>;
-    let ap: ref<AccessPointControllerPS>;
-    let scannerBlackboard: wref<IBlackboard>;
-    let characterRecord: ref<Character_Record>;
-    let scannerPreset: ref<ScannerModuleVisibilityPreset_Record>;
-    let items: array<wref<NPCEquipmentItem_Record>>;
+    let abilities: array<wref<GameplayAbility_Record>>;
+    let abilityChunk: ref<ScannerAbilities>;
     let abilityGroups: array<wref<GameplayAbilityGroup_Record>>;
+    let ap: ref<AccessPointControllerPS>;
     let archetypeData: wref<ArchetypeData_Record>;
+    let archetypeName: CName;
+    let archtypeChunk: ref<ScannerArchetype>;
+    let attitudeChunk: ref<ScannerAttitude>;
+    let availablePlayerActions: array<TweakDBID>;
+    let basicWeaponChunk: ref<ScannerWeaponBasic>;
+    let bountyChunk: ref<ScannerBountySystem>;
+    let bountyUI: BountyUI;
+    let choices: array<InteractionChoice>;
+    let context: GetActionsContext;
+    let detailedWeaponChunk: ref<ScannerWeaponDetailed>;
+    let descriptionChunk: ref<ScannerVehicleInfo>;
     let enemyDifficulty: EPowerDifferential;
+    let factionChunk: ref<ScannerFaction>;
     let hasLinkToDB: Bool;
-    characterRecord = TweakDBInterface.GetCharacterRecord(this.GetRecordID());
-    scannerPreset = characterRecord.ScannerModulePreset();
-    thisEntity = (EntityGameInterface.GetEntity(this.GetEntity()) as GameObject);
-    scannerBlackboard = GameInstance.GetBlackboardSystem(this.GetGame()).Get(GetAllBlackboardDefs().UI_ScannerModules);
-    if Equals(characterRecord, null) || Equals(scannerPreset, null) || Equals(scannerBlackboard, null) {
+    let healthChunk: ref<ScannerHealth>;
+    let i: Int32;
+    let items: array<wref<NPCEquipmentItem_Record>>;
+    let k: Int32;
+    let levelChunk: ref<ScannerLevel>;
+    let nameChunk: ref<ScannerName>;
+    let nameParams: ref<inkTextParams>;
+    let networkStatusChunk: ref<ScannerNetworkStatus>;
+    let puppetQuickHack: wref<ObjectAction_Record>;
+    let quickHackActionRecords: array<wref<ObjectAction_Record>>;
+    let rarityChunk: ref<ScannerRarity>;
+    let resistancesChunk: ref<ScannerResistances>;
+    let resists: array<ScannerStatDetails>;
+    let statPoolSystem: ref<StatPoolsSystem>;
+    let vulnerabilitiesChunk: ref<ScannerVulnerabilities>;
+    let vulnerability: Vulnerability;
+    let z: Int32;
+    let characterRecord: ref<Character_Record> = TweakDBInterface.GetCharacterRecord(this.GetRecordID());
+    let scannerPreset: ref<ScannerModuleVisibilityPreset_Record> = characterRecord.ScannerModulePreset();
+    let thisEntity: ref<GameObject> = EntityGameInterface.GetEntity(this.GetEntity()) as GameObject;
+    let scannerBlackboard: wref<IBlackboard> = GameInstance.GetBlackboardSystem(this.GetGame()).Get(GetAllBlackboardDefs().UI_ScannerModules);
+    if !IsDefined(characterRecord) || !IsDefined(scannerPreset) || !IsDefined(scannerBlackboard) {
       return false;
     };
     scannerBlackboard.SetInt(GetAllBlackboardDefs().UI_ScannerModules.ObjectType, EnumInt(ScannerObjectType.PUPPET), true);
@@ -117,7 +112,7 @@ public const func CompileScannerChunks() -> Bool {
         nameChunk.SetArchetype(true);
       };
       nameParams = new inkTextParams();
-      if this.GetPS().HasAlternativeName() {
+      if (this.GetPS() as ScriptedPuppetPS).HasAlternativeName() {
         if IsNameValid(characterRecord.AlternativeFullDisplayName()) {
           NPCName = LocKeyToString(characterRecord.AlternativeFullDisplayName());
         } else {
@@ -158,14 +153,12 @@ public const func CompileScannerChunks() -> Bool {
       };
       scannerBlackboard.SetVariant(GetAllBlackboardDefs().UI_ScannerModules.ScannerName, ToVariant(nameChunk));
     };
-
     if this.IsCrowd() && !characterRecord.IsChild() {    
         let descriptionString = this.GenerateCharacterBackground();
         descriptionChunk = new ScannerVehicleInfo();
         descriptionChunk.Set(descriptionString);
         scannerBlackboard.SetVariant(GetAllBlackboardDefs().UI_ScannerModules.ScannerVehicleInfo, ToVariant(descriptionChunk));
     }
-
     if scannerPreset.ShouldShowLevel() {
       levelChunk = new ScannerLevel();
       levelChunk.Set(0);
@@ -191,13 +184,13 @@ public const func CompileScannerChunks() -> Bool {
     if scannerPreset.ShouldShowHealth() {
       healthChunk = new ScannerHealth();
       statPoolSystem = GameInstance.GetStatPoolsSystem(this.GetGame());
-      if !Equals(statPoolSystem, null) {
+      if IsDefined(statPoolSystem) {
         healthChunk.Set(Cast(statPoolSystem.GetStatPoolValue(Cast(this.GetEntityID()), gamedataStatPoolType.Health, false)), Cast(GameInstance.GetStatPoolsSystem(this.GetGame()).GetStatPoolMaxPointValue(Cast(this.GetEntityID()), gamedataStatPoolType.Health)));
         scannerBlackboard.SetVariant(GetAllBlackboardDefs().UI_ScannerModules.ScannerHealth, ToVariant(healthChunk));
       };
     };
     if scannerPreset.ShouldShowBounty() && TDBID.IsValid(this.GetRecord().BountyDrawTable().GetID()) {
-      if ArraySize(this.m_bounty.m_transgressions) < 0 {
+      if ArraySize(this.m_bounty.m_transgressions) <= 0 {
         BountyManager.GenerateBounty(this);
       };
       bountyChunk = new ScannerBountySystem();
@@ -205,20 +198,23 @@ public const func CompileScannerChunks() -> Bool {
       bountyUI.moneyReward = this.m_bounty.m_moneyAmount;
       bountyUI.streetCredReward = this.m_bounty.m_streetCredAmount;
       enemyDifficulty = RPGManager.CalculatePowerDifferential(thisEntity);
-      if Equals(enemyDifficulty, EPowerDifferential.TRASH) {
-        bountyUI.level = 1;
-      };
-      if Equals(enemyDifficulty, EPowerDifferential.EASY) {
-        bountyUI.level = 2;
-      };
-      if Equals(enemyDifficulty, EPowerDifferential.NORMAL) {
-        bountyUI.level = 3;
-      };
-      if Equals(enemyDifficulty, EPowerDifferential.HARD ){
-        bountyUI.level = 4;
-      };
-      if Equals(enemyDifficulty, EPowerDifferential.IMPOSSIBLE) {
-        bountyUI.level = 5;
+      switch enemyDifficulty {
+        case EPowerDifferential.TRASH:
+          bountyUI.level = 1;
+          break;
+        case EPowerDifferential.EASY:
+          bountyUI.level = 2;
+          break;
+        case EPowerDifferential.NORMAL:
+          bountyUI.level = 3;
+          break;
+        case EPowerDifferential.HARD:
+          bountyUI.level = 4;
+          break;
+        case EPowerDifferential.IMPOSSIBLE:
+          bountyUI.level = 5;
+          break;
+        default:
       };
       bountyUI.hasAccess = GameInstance.GetStatsSystem(this.GetGame()).GetStatValue(Cast(GetPlayer(this.GetGame()).GetEntityID()), gamedataStatType.HasLinkToBountySystem) > 0.00;
       i = 0;
@@ -241,36 +237,36 @@ public const func CompileScannerChunks() -> Bool {
         scannerBlackboard.SetVariant(GetAllBlackboardDefs().UI_ScannerModules.ScannerWeaponBasic, ToVariant(basicWeaponChunk));
       };
     };
-    if !this.IsDead() && !this.IsCrowd() && !ScriptedPuppet.IsDefeated(this) && scannerPreset.ShouldShowVulnerabilities() {
+    if !this.IsDead() && !ScriptedPuppet.IsDefeated(this) && scannerPreset.ShouldShowVulnerabilities() {
       vulnerabilitiesChunk = new ScannerVulnerabilities();
       availablePlayerActions = RPGManager.GetPlayerQuickHackList(GetPlayer(this.GetGame()));
-      context = this.GetPS().GenerateContext(gamedeviceRequestType.Remote, Device.GetInteractionClearance(), Device.GetPlayerMainObjectStatic(this.GetGame()), this.GetEntityID());
+      context = (this.GetPS() as ScriptedPuppetPS).GenerateContext(gamedeviceRequestType.Remote, Device.GetInteractionClearance(), Device.GetPlayerMainObjectStatic(this.GetGame()), this.GetEntityID());
       ArrayResize(quickHackActionRecords, ArraySize(availablePlayerActions));
       i = 0;
       while i < ArraySize(availablePlayerActions) {
         quickHackActionRecords[i] = TweakDBInterface.GetObjectActionRecord(availablePlayerActions[i]);
         i += 1;
       };
-      this.GetPS().GetValidChoices(quickHackActionRecords, context, null, false, choices);
+      (this.GetPS() as ScriptedPuppetPS).GetValidChoices(quickHackActionRecords, context, null, false, choices);
       i = 0;
       while i < ArraySize(choices) {
         k = 0;
         while k < ArraySize(choices[i].data) {
-            let v: ref<ScriptableDeviceAction> = FromVariant(choices[i].data[k]);
-            puppetQuickHack = v.GetObjectActionRecord();
-            if !Equals(puppetQuickHack, null) {
-                vulnerability.vulnerabilityName = puppetQuickHack.ObjectActionUI().Caption();
-                vulnerability.icon = puppetQuickHack.ObjectActionUI().CaptionIcon().EnumName();
-                z = 0;
-                while z < ArraySize(quickHackActionRecords) {
-                if quickHackActionRecords[z].GameplayCategory().GetID() == puppetQuickHack.GetID() {
-                    vulnerability.isActive = true;
-                };
-                z += 1;
-                };
-                vulnerabilitiesChunk.PushBack(vulnerability);
+          let v: ref<ScriptableDeviceAction> = FromVariant(choices[i].data[k]);
+          puppetQuickHack = v.GetObjectActionRecord();
+          if IsDefined(puppetQuickHack) {
+            vulnerability.vulnerabilityName = puppetQuickHack.ObjectActionUI().Caption();
+            vulnerability.icon = puppetQuickHack.ObjectActionUI().CaptionIcon().EnumName();
+            z = 0;
+            while z < ArraySize(quickHackActionRecords) {
+              if quickHackActionRecords[z].GameplayCategory().GetID() == puppetQuickHack.GetID() {
+                vulnerability.isActive = true;
+              };
+              z += 1;
             };
-            k += 1;
+            vulnerabilitiesChunk.PushBack(vulnerability);
+          };
+          k += 1;
         };
         i += 1;
       };
@@ -280,8 +276,8 @@ public const func CompileScannerChunks() -> Bool {
     };
     if scannerPreset.ShouldShowNetworkStatus() {
       networkStatusChunk = new ScannerNetworkStatus();
-      ap = this.GetPS().GetAccessPoint();
-      if !Equals(ap, null) {
+      ap = (this.GetPS() as ScriptedPuppetPS).GetAccessPoint();
+      if IsDefined(ap) {
         if ap.IsBreached() {
           networkStatusChunk.Set(ScannerNetworkState.BREACHED);
         } else {
@@ -304,7 +300,7 @@ public const func CompileScannerChunks() -> Bool {
     if !this.IsDead() && !ScriptedPuppet.IsDefeated(this) {
       abilityChunk = new ScannerAbilities();
       archetypeData = characterRecord.ArchetypeData();
-      if Equals(archetypeData, null) {
+      if !IsDefined(archetypeData) {
         return false;
       };
       if archetypeData.GetAbilityGroupsCount() > 0 {
@@ -323,64 +319,74 @@ public const func CompileScannerChunks() -> Bool {
 
 @replaceMethod(scannerDetailsGameController)
 public final func RefreshLayout() -> Void {
+    let i: Int32;
     this.BreakAniamtions();
     if NotEquals(HUDManager.GetActiveMode(this.m_gameInstance), ActiveMode.FOCUS) {
-        this.PlayCloseScannerAnimation();
+      this.PlayCloseScannerAnimation();
     };
     if Equals(this.m_scanningState, gameScanningState.Complete) || Equals(this.m_scanningState, gameScanningState.ShallowComplete) || Equals(this.m_scanningState, gameScanningState.Started) {
-        inkCompoundRef.RemoveAllChildren(this.m_scannerCountainer);
-        inkCompoundRef.RemoveAllChildren(this.m_fllufContainer);
-        inkCompoundRef.RemoveAllChildren(this.m_quickhackContainer);
-        inkWidgetRef.SetVisible(this.m_bg, true);
-        this.GetRootWidget().SetVisible(false);
-        this.SpawnFromLocal(inkWidgetRef.Get(this.m_quickhackContainer), n"QuickHackDescription");
-        if Equals(this.m_scannedObjectType, ScannerObjectType.PUPPET) {
-            this.GetRootWidget().SetVisible(true);
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerNPCHeaderWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerNPCBodyWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerSquadInfoWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerBountySystemWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerRequirementsWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerAbilitiesWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerResistancesWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceDescriptionWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerVehicleBody");
-        };
-        if Equals(this.m_scannedObjectType, ScannerObjectType.DEVICE) {
-            this.GetRootWidget().SetVisible(true);
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceHeaderWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerVulnerabilitiesWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerRequirementsWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceDescriptionWidget");
-        };
-        if Equals(this.m_scannedObjectType, ScannerObjectType.VEHICLE) {
-            this.GetRootWidget().SetVisible(true);
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerVehicleBody");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceDescriptionWidget");
-        };
-        if Equals(this.m_scannedObjectType, ScannerObjectType.GENERIC) {
-            this.GetRootWidget().SetVisible(true);
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceHeaderWidget");
-            this.SpawnFromLocal(inkWidgetRef.Get(this.m_scannerCountainer), n"ScannerDeviceDescriptionWidget");
-            inkWidgetRef.SetVisible(this.m_toggleDescirptionHackPart, false);
-        };
-        this.m_showScanAnimProxy = this.PlayLibraryAnimation(n"intro");
-        this.m_showScanAnimProxy.RegisterToCallback(inkanimEventType.OnFinish, this, n"OnScannerDetailsShown");
+      i = 0;
+      while i < ArraySize(this.m_asyncSpawnRequests) {
+        this.m_asyncSpawnRequests[i].Cancel();
+        i += 1;
+      };
+      ArrayClear(this.m_asyncSpawnRequests);
+      inkCompoundRef.RemoveAllChildren(this.m_scannerCountainer);
+      inkCompoundRef.RemoveAllChildren(this.m_quickhackContainer);
+      inkWidgetRef.SetVisible(this.m_bg, true);
+      this.GetRootWidget().SetVisible(false);
+      ArrayPush(this.m_asyncSpawnRequests, this.AsyncSpawnFromLocal(inkWidgetRef.Get(this.m_quickhackContainer), n"QuickHackDescription"));
+      switch this.m_scannedObjectType {
+        case ScannerObjectType.PUPPET:
+          this.GetRootWidget().SetVisible(true);
+          this.AsyncSpawnScannerModule(n"ScannerNPCHeaderWidget");
+          this.AsyncSpawnScannerModule(n"ScannerNPCBodyWidget");
+          this.AsyncSpawnScannerModule(n"ScannerBountySystemWidget");
+          this.AsyncSpawnScannerModule(n"ScannerRequirementsWidget");
+          this.AsyncSpawnScannerModule(n"ScannerAbilitiesWidget");
+          this.AsyncSpawnScannerModule(n"ScannerResistancesWidget");
+          this.AsyncSpawnScannerModule(n"ScannerDeviceDescriptionWidget");
+          this.AsyncSpawnScannerModule(n"ScannerVehicleBody");
+          break;
+        case ScannerObjectType.DEVICE:
+          this.GetRootWidget().SetVisible(true);
+          this.AsyncSpawnScannerModule(n"ScannerDeviceHeaderWidget");
+          this.AsyncSpawnScannerModule(n"ScannerVulnerabilitiesWidget");
+          this.AsyncSpawnScannerModule(n"ScannerRequirementsWidget");
+          this.AsyncSpawnScannerModule(n"ScannerDeviceDescriptionWidget");
+          break;
+        case ScannerObjectType.VEHICLE:
+          this.GetRootWidget().SetVisible(true);
+          this.AsyncSpawnScannerModule(n"ScannerVehicleBody");
+          this.AsyncSpawnScannerModule(n"ScannerDeviceDescriptionWidget");
+          break;
+        case ScannerObjectType.GENERIC:
+          this.GetRootWidget().SetVisible(true);
+          this.AsyncSpawnScannerModule(n"ScannerDeviceHeaderWidget");
+          this.AsyncSpawnScannerModule(n"ScannerDeviceDescriptionWidget");
+          inkWidgetRef.SetVisible(this.m_toggleDescirptionHackPart, false);
+          break;
+        default:
+          return;
+      };
+      this.m_showScanAnimProxy = this.PlayLibraryAnimation(n"intro");
+      this.m_showScanAnimProxy.RegisterToCallback(inkanimEventType.OnFinish, this, n"OnScannerDetailsShown");
     };
     if Equals(this.m_scanningState, gameScanningState.Stopped) || Equals(this.m_scanningState, gameScanningState.Default) {
-        this.PlayCloseScannerAnimation();
+      this.PlayCloseScannerAnimation();
     };
-}
+  }
+
 
 @replaceMethod(ScannervehicleGameController)
 protected cb func OnVehicleInfoChanged(value: Variant) -> Bool {
     let vehicleInfoData: ref<ScannerVehicleInfo>;
     vehicleInfoData = FromVariant(value);
-    if !Equals(vehicleInfoData, null) {
-        inkTextRef.SetLocalizedTextScriptAndFallback(this.m_vehicleInfoText, vehicleInfoData.GetVehicleInfo());
-        this.m_isValidVehicleInfo = true;
+    if IsDefined(vehicleInfoData) {
+      inkTextRef.SetLocalizedTextScriptAndFallback(this.m_vehicleInfoText, vehicleInfoData.GetVehicleInfo());
+      this.m_isValidVehicleInfo = true;
     } else {
-        this.m_isValidVehicleInfo = false;
+      this.m_isValidVehicleInfo = false;
     };
     this.UpdateGlobalVisibility();
-}
+  }
